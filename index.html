@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/00e2b84216.js" crossorigin="anonymous"></script>
+    <!-- bootstrap style -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="logo-cow.gif" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Reviews</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Products
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <!-- search bar -->
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+                <!-- shoping cart -->
+                <a style="font-size: 18px; background-color:rgb(130, 233, 176);" class="ms-3 navbar-tool-icon-box position-relative rounded-circle px-3 py-2" href="">
+                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">3</span>
+                    <i class="fas fa-shopping-cart"></i>
+                </a>
+
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- here is form for checkout -->
+    <div class="container">
+        <div class="row">
+            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a style="text-decoration: none;" href="#"><i class="fas fa-home"></i>Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Cart</li>
+                </ol>
+            </nav>
+            <div class="col-md-8">
+                <h4 class="mb-3">Billing address</h4>
+                <form class="row g-3">
+                    <!-- first name and last name -->
+                    <div class="col-md-6">
+                        <label for="firstName" class="form-label">First Name</label>
+                        <input type="email" class="form-control" id="firstName">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="lastName" class="form-label">Last Name</label>
+                        <input type="password" class="form-control" id="lastName">
+                    </div>
+                    <!-- user name -->
+                    <div class="col-12">
+                        <label for="lastName" class="form-label">User Name</label>
+                        <div class="input-group">
+                            <span class="input-group-text" id="basic-addon1">@</span>
+                            <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                        </div>
+                    </div>
+                    <!-- email(optional) -->
+                    <div class="col-12">
+                        <label for="inputAddress" class="form-label">Email <span class="text-muted">(optional)</span></label>
+                        <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                    </div>
+                    <!-- address -->
+                    <div class="col-12">
+                        <label for="inputAddress" class="form-label">Address</label>
+                        <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                    </div>
+                    <!-- address2 -->
+                    <div class="col-12">
+                        <label for="inputAddress2" class="form-label">Address 2</label>
+                        <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                    </div>
+                    <!-- country -->
+                    <div class="col-md-5">
+                        <label for="country" class="form-label">Country</label>
+                        <select id="country" class="form-select">
+                            <option selected>Choose...</option>
+                            <option>Bangladesh</option>
+                            <option>Honduras</option>
+                            <option>Kohekafh</option>
+                        </select>
+                    </div>
+                    <!-- state -->
+                    <div class="col-md-5">
+                        <label for="state" class="form-label">State</label>
+                        <select id="state" class="form-select">
+                            <option selected>Choose...</option>
+                            <option>Dhaka</option>
+                            <option>Kushtia</option>
+                            <option>Khulna</option>
+                        </select>
+                    </div>
+                    <!-- postal code -->
+                    <div class="col-md-2 mb-3">
+                        <label for="postalCode" class="form-label">Postal Code</label>
+                        <input type="text" class="form-control" id="postalCode">
+                    </div>
+                    <hr>
+                    <!-- checkbox -->
+                    <div class="row mt-2">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="sameAddress">
+                            <label for="sameAddress">
+                                Shipping address is the same as my billing address
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="saveInfo">
+                            <label for="saveInfo">
+                                Save this information for next time
+                            </label>
+                        </div>
+                    </div>
+                    <hr>
+
+                    <!-- radio button -->
+                    <div class="row">
+                        <h4 class="mb-3">Payment</h4>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="paymentMethode" id="exampleRadios1" value="option1" checked>
+                            <label class="form-check-label" for="exampleRadios1">
+                                Credit card
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="paymentMethode" id="exampleRadios2" value="option2">
+                            <label class="form-check-label" for="exampleRadios2">
+                                Debit card
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="paymentMethode" id="exampleRadios3" value="option3">
+                            <label class="form-check-label" for="exampleRadios3">
+                                PayPal
+                            </label>
+                        </div>
+                    </div>
+                    <!-- normal text input -->
+                    <div class="col-md-6">
+                        <label for="nameOnCard" class="form-label">Name on card</label>
+                        <input type="text" class="form-control" id="nameOnCard">
+                        <small class="text-muted">Full name as displayed on card</small>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="creditCardNumber" class="form-label">Credit card number</label>
+                        <input type="text" class="form-control" id="creditCardNumber">
+                    </div>
+
+                    <!-- normal text input -->
+                    <div class="col-md-3">
+                        <label for="expiration" class="form-label">Expiration</label>
+                        <input type="text" class="form-control" id="expiration">
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <label for="cvv" class="form-label">CVV</label>
+                        <input type="text" class="form-control" id="cvv">
+                    </div>
+                    <hr>
+
+                    <!-- submit button -->
+                    <button type="submit" class="btn btn-primary btn-lg btn-block">Continue to Checkout</button>
+                </form>
+            </div>
+
+            <!-- Your cart start -->
+            <div class="col-md-4">
+                <h4 class="d-flex justify-content-between align-items-center mb-3">
+                    <span class="text-muted">Your Cart</span>
+                    <span class="badge bg-secondary rounded-pill">3</span>
+                </h4>
+                <!-- list group start -->
+                <ul class="list-group">
+                    <li class="list-group-item d-flex justify-content-between">
+                        <div>
+                            <h6 class="my-0">First item</h6>
+                            <small class="text-muted">Brief description</small>
+                        </div>
+                        <span class="text-muted">$20</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between">
+                        <div>
+                            <h6 class="my-0">Second item</h6>
+                            <small class="text-muted">Brief description</small>
+                        </div>
+                        <span class="text-muted">$35</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between">
+                        <div>
+                            <h6 class="my-0">Third item</h6>
+                            <small class="text-muted">Brief description</small>
+                        </div>
+                        <span class="text-muted">$28</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between text-success">
+                        <div>
+                            <h6 class="my-0">Promo code</h6>
+                            <small>EXAMPLECODE</small>
+                        </div>
+                        <span>-$10</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between">
+                        <h6>Total (USD)</h6>
+                        <span class="text-muted">$96</span>
+                    </li>
+                </ul>
+                <!-- list group end -->
+                <form action="" class="card p-2 mt-3">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Promo code" aria-label="Recipient's username" aria-describedby="button-addon2">
+                        <button class="btn btn-outline-secondary" type="button" id="button-addon2">Redeem</button>
+                    </div>
+                </form>
+
+            </div>
+            <!-- cart end -->
+
+            <!-- <form action="">
+                <div class="input-group">
+
+                </div>
+            </form> -->
+            <li class="mb-1">
+                <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="false">
+                    Home
+                </button>
+                <div class="collapse " id="home-collapse" style="">
+                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small ">
+                        <li><a href="#" class="link-dark rounded text-decoration-none">Overview</a></li>
+                        <li><a href="#" class="link-dark rounded text-decoration-none">Updates</a></li>
+                        <li><a href="#" class="link-dark rounded">Reports</a></li>
+                    </ul>
+                </div>
+            </li>
+            <!-- next -->
+            <div class="accordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-button" data-bs-target="#childone" data-bs-toggle="collapse">This is accordion test that collaspe</h2>
+                    <div id="childone" class="accordion-collapse collapse show">
+                        <div class="accordion-body">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet, labore!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h1>here close the page</h1>
+
+
+
+
+
+
+
+            <!-- practice up -->
+        </div>
+    </div>
+
+
+
+
+
+    <!-- bootstrap javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+
+</html>
